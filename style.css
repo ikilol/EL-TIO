@@ -1,0 +1,86 @@
+body {
+  background-image: url(Inizio/sfondo.png);
+  background-repeat: repeat;
+}
+.container {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  top: calc(50% - 384px)
+}
+
+#box {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+.shadow,
+#phaser-container canvas {
+  box-shadow: 0 0 50px rgba(0,0,0,1);
+}
+#box>a {}
+
+#box>a:hover>.hide-on-hover,
+#box>a>.show-on-hover {
+  display: none;
+}
+
+#box a:hover>.show-on-hover,
+#box a>.hide-on-hover {
+  display: block;
+}
+
+
+#gioca,
+#slideshow,
+#crediti-back-home,
+#crediti,
+.pos-absolute {
+  position: absolute;
+}
+
+#preloading {
+    position: fixed;
+    z-index: 999;
+    top: calc(50% - 384px);
+    width: 100%;
+    text-align: center;
+}
+
+#preloading img {
+  margin: auto;
+}
+
+canvas {
+  display: none;
+}
+
+ #box, #box * , .Immagineslide, #phaser-container canvas {
+ cursor: url(menu/cursore.png), auto !important;
+}
+
+/*
+  * Posizioni dei tasti
+  * Le proprietà sono top, left, bottom, right
+  */
+#crediti-back-home {
+  bottom: 100px;
+  left: 80px
+}
+
+#gioca {
+  left: 175px;
+  top: 330px;
+}
+
+#slideshow {
+  left: 160px;
+  top: 440px;
+}
+
+#crediti {
+  left: 155px;
+  top: 550px;
+}

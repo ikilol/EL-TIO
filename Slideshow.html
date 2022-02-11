@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="Inizio/icona.png">
+
+
+  <link rel="stylesheet" type="text/css" href="slideshow/Slideshowstile.css">
+
+  <title>El Tio</title>
+
+</head>
+
+<body>
+  <style>
+  body{
+    background-color: #1d1d1d;}
+
+   </style>
+   <div class="Contenitore">
+     <!-- Contenuto -->
+
+     <div class="Immagineslide fade ">
+       <img src="slideshow/testo1.png" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/scena1.jpg" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/testo1.png" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/scena2.jpg" class="shadow" style="width:100%">
+     </div>
+
+       <div class="Immagineslide fade">
+       <img src="slideshow/testo1.png" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/scena3.jpg" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/testo1.png" class="shadow" style="width:100%">
+     </div>
+
+       <div class="Immagineslide fade">
+       <img src="slideshow/scena4.jpg" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/testo1.png" class="shadow" style="width:100%">
+     </div>
+
+     <div class="Immagineslide fade">
+       <img src="slideshow/Comandi.png" class="shadow" style="width:100%">
+       <a href="gioco.html"><img src="menu/Gioca.png" style=" position: absolute; margin: auto; top: 26px; left: 95px; right: 0; bottom: 0;"></a>
+        <a href="index.html"><img src="menu/Indietro.png" style=" position: absolute; margin: auto; top: 26px; left: 95px; right: 0; bottom: 0;"></a>
+     </div>
+
+
+     <!-- Bottoni Destra e Sinistra -->
+     <a class="Sinistra" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="Destra" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+
+    <!-- Javascript -->
+   <script> var Indice = 1;
+   showSlides(Indice);
+
+   // Avanti_indietro
+   function plusSlides(n) {
+     showSlides(Indice += n);
+   }
+
+   function showSlides(n) {
+     var ok;
+     var immagine = document.getElementsByClassName("Immagineslide");
+     if (n > immagine.length) {Indice = 1}
+     if (n < 1) {Indice = immagine.length}
+     for (ok = 0; ok < immagine.length; ok++) {
+         immagine[ok].style.display = "none";
+     }
+
+     immagine[Indice-1].style.display = "block";
+     }
+
+  </script>
+</body>
+</html>
